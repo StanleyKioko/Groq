@@ -258,11 +258,13 @@ def web():
             form {{ margin-top: 20px; }}
             input[type="radio"] {{ margin: 10px 0; }}
             input[type="submit"] {{ padding: 10px; background: #28a745; color: white; border: none; cursor: pointer; }}
+            img {{display: block; margin: 20px auto; max-width: 100%; height: auto; }}
         </style>
     </head>
     <body>
         <h1>LearnEasy: Math Grade 4</h1>
         <p>Points: {points} | Lives: {lives}</p>
+        <img src="https://t4.ftcdn.net/jpg/02/94/52/73/240_F_294527346_xk225Ec5cbgFNvVb5b8FZYTYNpst8X7w.jpg" alt="Gamification Cartoon">
         <h3>Q{current_question + 1}: {question['question']}</h3>
         <form method="POST">
             <input type="radio" name="answer" value="A"> {question['options'][0]}<br>
